@@ -4,7 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-LOCAL_PATH := device/oneplus/hotdogv2
+LOCAL_PATH := device/oneplus/hotdogb
 
 # define hardware platform
 PRODUCT_PLATFORM := msmnile
@@ -18,10 +18,10 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     boot \
     system \
-		system_ext \
+    system_ext \
     vendor \
     vbmeta \
-		dtbo
+    dtbo
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
