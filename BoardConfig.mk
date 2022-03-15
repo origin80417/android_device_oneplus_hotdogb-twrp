@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/oneplus/hotdogv2
+DEVICE_PATH := device/oneplus/hotdogb
 
 # Architecture
 TARGET_ARCH := arm64
@@ -96,7 +96,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 # Partition Info
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_USES_PRODUCTIMAGE := true
-
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
@@ -112,7 +111,7 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 6441926656 # 7511998464
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
-		system_ext \
+    system_ext \
     vendor \
     product \
     odm
@@ -165,10 +164,9 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 420
-TW_Y_OFFSET := 80
-TW_H_OFFSET := -80
+# TW_Y_OFFSET := 80
+# TW_H_OFFSET := -80
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := true
 TW_HAS_EDL_MODE := true
